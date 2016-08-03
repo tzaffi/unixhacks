@@ -30,3 +30,8 @@ command inside the directory in question:
 ```
 /path/to/scripts/mv_.sql.txt_2.sql.sh
 ```
+
+## a nice .emacs config file
+
+## a nice .screenrc config file
+Makes screen work nicely with the `.emacs` above
