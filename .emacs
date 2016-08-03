@@ -1,4 +1,4 @@
-set-face-attribute 'default nil :height 180)
+(set-face-attribute 'default nil :height 180)
 
 (ido-mode t)
 (setq ido-enable-flex-matching t) ; fuzzy matching is a must have                                                                                                                                                                                                                                                                                                                                                                        
