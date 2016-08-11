@@ -39,3 +39,4 @@ bind F eval "hardstatus alwayslastline"
 # don't allow locking the screen 
 #(it's so annoynig when you hit ctrl-a x by mistake... and then you're locked out for good):
 bind x
+bind ^x
