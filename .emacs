@@ -10,6 +10,10 @@
 (global-set-key (kbd "C-x .") 'other-window)
 (global-set-key (kbd "C-x ,") 'previous-multiframe-window)
 
+;; cf. https://github.com/brettlangdon/jsfmt.el and save jsfmt.el inside of ~./emacs.d/                                                                                                                             
+(load "~/.emacs.d/jsfmt")
+(add-hook 'before-save-hook 'jsfmt-before-save)
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.                                                                                                                                                                                                                                                                                                                                                                                            
  ;; If you edit it by hand, you could mess it up, so be careful.                                                                                                                                                                                                                                                                                                                                                                         
