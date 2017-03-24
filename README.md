@@ -2,6 +2,8 @@
 
 ## Converting all UTF-16 files to ASCII
 
+* `utf16_2_ascii.sh`
+
 Windows is notorious for using UTF-16 and tricking git into thinking
 that the file is binary. 
 For example, when having SQL Server generate scripts for stored procedures
@@ -23,6 +25,8 @@ run the following command inside the directory containing all the `.sql` files
 
 ## Moving all files ending in one extension to another 
 
+* `mv_.sql.txt_2.sql.sh`
+
 To iterate through all files in the current working directoy that and in `.sql.txt`
 and move them to `.sql` (***thus overwriting any pre-existing files**) use the following
 command inside the directory in question:
@@ -33,5 +37,13 @@ command inside the directory in question:
 
 ## a nice .emacs config file
 
+* `.emacs`
+
 ## a nice .screenrc config file
 Makes screen work nicely with the `.emacs` above
+
+* `.screenrc`
+
+## Some gymnastics with time in Unix
+
+* `timenastics.sh`
