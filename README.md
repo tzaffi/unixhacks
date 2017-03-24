@@ -44,6 +44,7 @@ Makes screen work nicely with the `.emacs` above
 
 * `.screenrc`
 
-## Some gymnastics with time in Unix
+## Some gymnastics with Jenkins, API calls, JSON parsing, `bc` and time in Unix
 
-* `timenastics.sh`
+* `JSONapiTimenastics.sh`
+
