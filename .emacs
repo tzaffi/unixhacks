@@ -1,11 +1,17 @@
+;;; package --- Summary
+;;; just a summary
+
+;;; Commentary:
+;;; just some commentary
+
 ;;; Code:
 (set-face-attribute 'default nil :height 180)
 
 (ido-mode t)
 (setq ido-enable-flex-matching t) ; fuzzy matching is a must have
-
 (setq js-indent-level 2)
 (setq js2-basic-offset 2)
+(setq tab-width 4)
 
 (set-cursor-color "#ffffff")
 
@@ -16,13 +22,15 @@
 (load "~/.emacs.d/jsfmt")
 (add-hook 'before-save-hook 'jsfmt-before-save)
 
+;; cf. http://web-mode.org/ and save https://github.com/fxbois/web-mode/blob/master/web-mode.el to  ~./emacs.d/web-mode.el
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(indent-tabs-mode nil)
- '(package-selected-packages (quote (markdown-mode pug-mode flycheck beacon))))
+ '(package-selected-packages (quote (go-mode markdown-mode pug-mode flycheck beacon))))
 
 ;; (setq js2-mode-hook
 ;;      '(lambda () (progn
@@ -66,6 +74,15 @@
     (setq web-mode-code-indent-offset 2))
   (add-hook 'web-mode-hook  'my-web-mode-hook)
 
+  (load "~/.emacs.d/web-mode")
+  (require 'web-mode)
+  (add-to-list 'auto-mode-alist '("\\.phtml\\'" . web-mode))
+  (add-to-list 'auto-mode-alist '("\\.tpl\\.php\\'" . web-mode))
+  (add-to-list 'auto-mode-alist '("\\.[agj]sp\\'" . web-mode))
+  (add-to-list 'auto-mode-alist '("\\.[aj]s[cp]?x\\'" . web-mode))
+  (add-to-list 'auto-mode-alist '("\\.erb\\'" . web-mode))
+  (add-to-list 'auto-mode-alist '("\\.mustache\\'" . web-mode))
+  (add-to-list 'auto-mode-alist '("\\.djhtml\\'" . web-mode))
 
   ;; customize flycheck temp file prefix
   (setq-default flycheck-temp-prefix ".flycheck")
@@ -92,6 +109,7 @@
 (setq beacon-push-mark 35)
 (setq beacon-color "#666600")
 
+(setq tab-width 4)
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
