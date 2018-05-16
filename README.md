@@ -48,3 +48,7 @@ Makes screen work nicely with the `.emacs` above
 
 * `JSONapiTimenastics.sh`
 
+
+## Don't forget
+* `iterm2`
+* `bash_it`
